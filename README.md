@@ -13,7 +13,7 @@ python setup.py develop
 
 To run tests, use nose (`pip install nose`):
 ```bash
-nosetests
+cd test && python3 example.py
 ```
 
 # License

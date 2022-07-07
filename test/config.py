@@ -9,6 +9,6 @@
 # localnet
 # http://localhost: 3030
 
-# NODE_URL = "https://rpc.testnet.near.org"
+NODE_URL = "https://rpc.testnet.near.org"
 
-NODE_URL = "https://rpc.ci-testnet.near.org"
+# NODE_URL = "https://rpc.ci-testnet.near.org"

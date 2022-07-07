@@ -73,7 +73,7 @@ class Signer(object):
 
     @classmethod
     def from_json(cls, j: dict):
-        return cls(j['account_id'], KeyPair(j['secret_key']))
+        return cls(j['account_id'], KeyPair(j['private_key']))
 
     @classmethod
     def from_json_file(cls, json_file: str):
