@@ -39,7 +39,7 @@ class Account(object):
         block_hash = base58.b58decode(block_hash.encode('utf8'))
         serialized_tx = transactions.sign_and_serialize_transaction(
             receiver_id, self._access_key['nonce'], actions, block_hash, self._signer)
-        result: dict = self._provider.send_tx_and_wait(serialized_tx, 10)
+        result: dict = self._provider.send_tx_and_wait(serialized_tx)
         for outcome in itertools.chain([result['transaction_outcome']], result['receipts_outcome']):
             for log in outcome['outcome']['logs']:
                 print("Log:", log)
